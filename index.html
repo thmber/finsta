@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon/icon-star.png">
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+</head>
+
+<body id="body" onload="start()">
+
+<div class="header-box white" id="header-box">
+    <div class="header margin-right margin-left">
+        <div class="logo-box" id="logo-box">
+            <div class="logo" id="logo-bg">
+                <img src="icon/bin-star-icon.png" alt="">
+            </div>
+            <div>
+                <h1 id="logo-headline">finster</h1>
+            </div>
+        </div>
+        <div onclick="switchMode()" class="headline hide headline-light" id="headline">
+            too happy? try dark-mode! 
+        </div>
+        <div class="header-mobile" onclick="newUser()">
+                <img src="icon/lighttrashbin.png" id="header-bin">
+        </div>
+        <div class="header-mobile" onclick="showOverlay()">
+            <img src="icon/lightsugg.png" id="header-sugg">
+        </div>
+
+        <div class="header-icons">
+            <img src="icon/lighthomepage-icon.png" id="header-home" alt="">
+            <img src="icon/lightpaper-plane-icon.png" id="header-plane" alt="">
+            <img src="icon/lightsearch-icon.png" id="header-search" alt="">
+            <img src="icon/lightspeech-bubble-line-icon.png" id="header-bubble" alt="">
+            <img class="header-myprofile" src="img/faces/myprofile.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="main-container margin-right margin-left">
+    <div class="main" id="main">
+
+        <div class="follower-box" id="follower-box">
+            <p class="sugg-card-newpeople">Du folgst noch niemandem</p>
+        </div>
+        <div class="posts-container" id="posts-container">
+        </div>
+    </div>
+
+    <div class="sugg-container" id="sugg-container">
+        <div onclick="generateFakeUser()" class="sugg-card-newpeople" id="findpeople">
+           >>> Coole Leute finden...
+        </div>
+        <div onclick="newUser()" class="sugg-card-newpeople" id="findnewpeople">
+        </div>
+      
+        <div id="sugg-box" class="suggestions-container">
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>

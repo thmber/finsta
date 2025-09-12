@@ -1,0 +1,427 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: average;
+  
+}
+::placeholder{
+    color: rgb(190, 189, 189);
+    opacity: 1;
+}
+.background{
+    background-image: url(img/bg1.jpg);
+}
+@font-face {
+    font-family: billabong;
+    src: url(fonts/Billabong.woff2);
+}
+@font-face {
+    font-family: average;
+    src: url(fonts/average-v18-latin-regular.woff2);
+}
+.hide {
+    display: none !important;
+ }
+/* +++++++++++++++++++++++++ header ++++++++++++++*/
+.logo{
+    height: 42px;
+    width: 42px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom left, rgb(105, 26, 224), rgb(230, 28, 115), rgb(245, 255, 51));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    height: 35px;
+    width: 35px;
+}
+.logo-box{
+    display: flex;
+    align-items: center;
+   
+}
+h1{
+    font-family: billabong;
+    font-size: 32px;
+    color: rgb(48, 48, 107);
+    margin-left: 5px;
+}
+.header-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1.5px solid rgb(223, 222, 222);
+}
+.white{
+    background-color: white;
+}
+.black{
+    background-color: black;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+}
+.header-myprofile{
+    border-radius: 100%;
+
+}
+.header-mobile img{
+    width: 40px;
+    height: 40px;
+}
+.header-icons img {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+.headline{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 4px;
+    cursor: pointer;
+    color:rgb(190, 189, 189);
+}
+.headline-light{
+    color:rgb(190, 189, 189);
+}
+.headline-light:hover{
+    background-color: rgb(59, 58, 58);
+    color: white;
+}
+.headline-dark:hover{
+    background: linear-gradient(to bottom left, rgb(105, 26, 224), rgb(230, 28, 115), rgb(245, 255, 51));
+    color: white;
+}
+.header-mobile{
+    cursor: pointer;
+    display: none;
+}
+
+
+/*+++++++++++++++++++++++++++++++++ post -containers ++++++++++++++++++*/
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.margin-right{
+    margin-right: 300px;
+}
+.margin-left{
+    margin-left: 300px;
+}
+.card-header{
+    display: flex;
+    align-items: center;
+}
+.post-card{
+    border: 1.5px solid rgb(223, 222, 222);
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.posts-container{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 30vw;
+}
+.card-image{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: contain;
+}
+.card-image img{
+    width: 100%;
+}
+.user-name{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+.user-location{
+    margin-left: 10px;
+    color: rgb(190, 189, 189);
+}
+.icons-line{
+    display: flex;
+    justify-content: space-between;
+}
+.icons-line img{
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    cursor: pointer;
+}
+.icons-line-left, .icons-line-right{
+    display: flex;
+    align-items: center;
+}
+.number-of-likes{
+    font-weight: bold;
+    margin-left: 10px;
+}
+.plane{
+    transition: all 625ms ease-in-out;
+}
+
+.comment{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: rgb(190, 189, 189);
+}
+.new-comment{
+    border: unset;
+    border-top: 1px solid rgb(209,209, 209);;
+    width: 29vw;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+.new-comment:focus{
+    outline: none;
+    color:rgb(190, 189, 189);
+}
+.placeholder-shown{
+    color: white;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++ Suggestions ++++++++++++++++++++++++ */
+.sugg-container{
+    width: 30vh;
+    margin-top: 100px;
+   
+}
+
+.sugg-card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.sugg-card-newpeople{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    color: rgb(190, 189, 189);
+    font-size: 22px;
+    cursor: pointer;
+}
+.sugg-card-newpeople:hover{
+    color: rgb(101, 101, 101);
+}
+
+.sugg-profile{
+    margin-right: 25px;
+}
+.sugg-profile img{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.user-im-sugg{
+    border: 5px solid transparent;
+}
+.user-im-sugg:hover{
+    opacity: 0.7;
+
+}
+.sugg-follow{
+    color: rgb(38, 174, 254);
+    padding-right: 20px;
+    cursor: pointer;
+}
+.sugg-name{
+    font-weight: bold;
+}
+.sugg-name-follow{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+/* ##################### Follower-Box ########################## */
+.follower-box{
+    border: 1.5px solid rgb(223, 222, 222);
+    width: 30vw;
+    height: 100px;
+    overflow-x: auto;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.image-background{
+    height: 87px;
+    width: 87px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: linear-gradient(to bottom left, rgb(105, 26, 224), rgb(230, 28, 115), rgb(245, 255, 51));
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.user-image{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.user-image img{
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+.user-image-card{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.user-image-card img{
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+.user-image:hover {
+    opacity: 0.8;
+}
+@media (max-width: 1500px){  
+    .margin-left{
+        margin-left: 150px;
+    }
+    .margin-right{
+        margin-right: 150px;
+    }
+    .post-card, .follower-box, .posts-container{
+        width: 50vw;
+    }
+    .new-comment{
+        width: 49vw;
+    }
+
+}
+@media (max-width: 1100px){  
+    .margin-left{
+        margin-left: 100px;
+    }
+    .margin-right{
+        margin-right: 100px;
+    }
+}  
+
+@media (max-width: 850px){
+    .header-icons{
+        display: none;
+    }
+    .margin-right{
+        margin-right: 0;
+    }
+    .margin-left{
+        margin-left: 0;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .post-card, .follower-box, .posts-container, .header{
+        width: 75vw;
+    }
+    .new-comment{
+        width: 73vw;
+    }
+    .header-box{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-container{
+       flex-direction: column;
+       align-items: center;
+    }
+    .header-mobile{
+        display: unset;
+        cursor: pointer;
+    }
+    
+    .sugg-container{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: auto;
+        opacity: 0.9;
+        background-color: white;
+        z-index: 3;
+        display: none;
+    }
+    .showoverlay{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 550px){
+    
+    h1{
+        font-size: 24px;
+    }
+    .headline{
+        font-size: 15px;
+        width: 80px;
+    }
+    .icons-line img{
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+    }
+    .header-mobile img{
+        width: 30px;
+        height: 30px;
+    }
+    .logo img{
+        height: 25px;
+        width: 25px;
+    }
+    .logo{
+        height: 32px;
+        width: 32px;
+        border-radius: 10px;
+    }
+    .logo-box{
+        width: 75px;
+    }
+    
+}
+

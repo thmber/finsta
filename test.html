@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+</style>
+
+
+<script>
+let user = [{"firstname": "X", "lastname": "X", "location": "X", "profilepic": "X", 
+ "posts": [], "followed": false, "active": false}];
+
+function gener(){   
+    for (let i = 0; i < 2; i++) {
+        for (let i2 = 0; i2 < 5; i2++) {
+            let random = Math.floor((Math.random()) * 1000); 
+            document.getElementById('hi').innerHTML +=`
+            ${random}
+            `;
+        }
+    }
+}
+
+</script>
+
+
+<body>
+    
+    <button onclick="gener()">gen</button>
+    <DIV id="hi"></DIV>
+
+</body>
+</html>
