@@ -1,6 +1,6 @@
 # :cyclone: finsta
 
-![finsta Screenshot](img/insta.png)
+![finsta Screenshot](img/screenshot.avif)
 
 ## :sunflower: Features
 
